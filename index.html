@@ -16,12 +16,24 @@
     <div class="title_txt">
       <h1 class="title">Flip your image 🎨</h1>
       <p>Select an image and use arrows to rotate it</p>
+      <button class="checkbutton" id="top_left" onclick="setTopLeft()">
+        Top Left
+      </button>
+      <button class="checkbutton" id="top_right" onclick="setTopRight()">
+        Top Right
+      </button>
+      <button class="checkbutton" id="bot_left" onclick="setBotLeft()">
+        Bottom Left
+      </button>
+      <button class="checkbutton" id="bot_right" onclick="setBotRight()">
+        Bottom Right
+      </button>
     </div>
     <div class="container">
       <div class="top_left">
         <img
           id="img_top_left"
-          onclick=""
+          class="a"
           src="./css/images/basic_image.png"
           alt=""
         />
@@ -29,15 +41,7 @@
       <div class="top_right">
         <img
           id="img_top_right"
-          onclick=""
-          src="./css/images/basic_image.png"
-          alt=""
-        />
-      </div>
-      <div class="bot_right">
-        <img
-          id="img_bot_right"
-          onclick=""
+          class="a"
           src="./css/images/basic_image.png"
           alt=""
         />
@@ -45,11 +49,20 @@
       <div class="bot_left">
         <img
           id="img_bot_left"
-          onclick=""
+          class="a"
+          src="./css/images/basic_image.png"
+          alt=""
+        />
+      </div>
+      <div class="bot_right">
+        <img
+          id="img_bot_right"
+          class="a"
           src="./css/images/basic_image.png"
           alt=""
         />
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
