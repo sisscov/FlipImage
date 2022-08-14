@@ -1,6 +1,11 @@
 function getImage() {
   let link = document.getElementById("search_input").value;
 
+  if (link == "") {
+    alert("Enter the address of image in the search field");
+    getImage.preventDefault();
+  }
+
   document.getElementById("img_top_right").src = link;
   document.getElementById("img_top_left").src = link;
   document.getElementById("img_bot_right").src = link;
@@ -69,4 +74,11 @@ function deleteBorder() {
   document.getElementById("img_top_right").style.border = "none";
   document.getElementById("img_bot_left").style.border = "none";
   document.getElementById("img_bot_right").style.border = "none";
+}
+function imageError() {
+  document.getElementById("img_top_right").src = "./css/images/basic_image.jpg";
+  document.getElementById("img_top_left").src = "./css/images/basic_image.jpg";
+  document.getElementById("img_bot_right").src = "./css/images/basic_image.jpg";
+  document.getElementById("img_bot_left").src = "./css/images/basic_image.jpg";
+  alert("We can't find your picture. Please check that the link is correct");
 }

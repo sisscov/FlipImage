@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+      <div class="background">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+      </div>
       <div class="title_txt">
         <h1 class="title">Flip your image 🎨</h1>
-        <p>Select an image and use arrows to rotate it</p>
+        <p>Select an image and use arrows to flip it</p>
         <div class="search_image">
           <input
             type="url"
@@ -45,19 +50,19 @@
           <img
             id="img_top_left"
             src="./css/images/basic_image.jpg"
-            alt=""
+            alt="img_top_left"
+            onerror="imageError()"
           />
         </div>
         <div class="top_right">
-          <img id="img_top_right" src="./css/images/basic_image.jpg" alt="" />
+          <img id="img_top_right" src="./css/images/basic_image.jpg" alt="img_top_right" />
         </div>
         <div class="bot_left">
-          <img id="img_bot_left" src="./css/images/basic_image.jpg" alt="" />
+          <img id="img_bot_left" src="./css/images/basic_image.jpg" alt="img_bot_left" />
         </div>
         <div class="bot_right">
-          <img id="img_bot_right" src="./css/images/basic_image.jpg" alt="" />
+          <img id="img_bot_right" src="./css/images/basic_image.jpg" alt="img_bot_right" />
         </div>
-      </div>
     <script src="./js/main.js"></script>
   </body>
 </html>
