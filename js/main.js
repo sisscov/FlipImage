@@ -1,3 +1,11 @@
+function getImage() {
+  let link = document.getElementById("search_input").value;
+
+  document.getElementById("img_top_right").src = link;
+  document.getElementById("img_top_left").src = link;
+  document.getElementById("img_bot_right").src = link;
+  document.getElementById("img_bot_left").src = link;
+}
 function setTopLeft() {
   if (document.getElementById("top_left").onclick) {
     variant = document.getElementById("img_top_left");

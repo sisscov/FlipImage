@@ -13,56 +13,51 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="title_txt">
-      <h1 class="title">Flip your image 🎨</h1>
-      <p>Select an image and use arrows to rotate it</p>
-      <button class="checkbutton" id="top_left" onclick="setTopLeft()">
-        Top Left
-      </button>
-      <button class="checkbutton" id="top_right" onclick="setTopRight()">
-        Top Right
-      </button>
-      <button class="checkbutton" id="bot_left" onclick="setBotLeft()">
-        Bottom Left
-      </button>
-      <button class="checkbutton" id="bot_right" onclick="setBotRight()">
-        Bottom Right
-      </button>
-    </div>
-    <div class="container">
-      <div class="top_left">
-        <img
-          id="img_top_left"
-          class="a"
-          src="./css/images/basic_image.png"
-          alt=""
-        />
+      <div class="title_txt">
+        <h1 class="title">Flip your image 🎨</h1>
+        <p>Select an image and use arrows to rotate it</p>
+        <div class="search_image">
+          <input
+            type="url"
+            id="search_input"
+            class="search_input"
+            placeholder="Enter the image address"
+          />
+          <button id="search_btn" class="search_btn" onclick="getImage()">
+            Search
+          </button>
+        </div>
+        <button class="checkbutton" id="top_left" onclick="setTopLeft()">
+          Top Left
+        </button>
+        <button class="checkbutton" id="top_right" onclick="setTopRight()">
+          Top Right
+        </button>
+        <button class="checkbutton" id="bot_left" onclick="setBotLeft()">
+          Bottom Left
+        </button>
+        <button class="checkbutton" id="bot_right" onclick="setBotRight()">
+          Bottom Right
+        </button>
       </div>
-      <div class="top_right">
-        <img
-          id="img_top_right"
-          class="a"
-          src="./css/images/basic_image.png"
-          alt=""
-        />
+      <div class="container">
+        <div class="top_left">
+          <img
+            id="img_top_left"
+            src="./css/images/basic_image.jpg"
+            alt=""
+          />
+        </div>
+        <div class="top_right">
+          <img id="img_top_right" src="./css/images/basic_image.jpg" alt="" />
+        </div>
+        <div class="bot_left">
+          <img id="img_bot_left" src="./css/images/basic_image.jpg" alt="" />
+        </div>
+        <div class="bot_right">
+          <img id="img_bot_right" src="./css/images/basic_image.jpg" alt="" />
+        </div>
       </div>
-      <div class="bot_left">
-        <img
-          id="img_bot_left"
-          class="a"
-          src="./css/images/basic_image.png"
-          alt=""
-        />
-      </div>
-      <div class="bot_right">
-        <img
-          id="img_bot_right"
-          class="a"
-          src="./css/images/basic_image.png"
-          alt=""
-        />
-      </div>
-    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>
